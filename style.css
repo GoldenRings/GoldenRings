@@ -1,0 +1,56 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b1f4a; /* Couleur de secours */
+    background-image: url('background.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cache le lecteur audio */
+#audio {
+    display: none;
+}
+
+/* Style pour le logo GoldenRings */
+#golden-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: -10px;
+    width: 400px;
+    height: auto;
+    animation: floating 2s infinite ease-in-out; /* Animation de flottement */
+}
+
+/* Conteneur des anneaux */
+.ring-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Anneaux */
+.ring {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('golden-ring.gif'); /* Remplacez par votre GIF */
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/* Animation de flottement */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
